@@ -1,0 +1,31 @@
+*{
+	position: relative;
+}
+
+#span001link{
+ 	margin-top: 10px;
+ 	float: left;
+ 	text-align: center;
+ 	position: absolute;
+ 	font-size: 16;
+ 	color: #987;
+ 	background-color: #910;
+ 	width: 100%;
+ 	height: 80px;
+ 	
+
+}
+.formclass{
+height: auto;
+margin-top: 90px;
+text-align: center;
+width: 100%;
+
+
+}
+.input_value_nomal_color{
+
+color: rgba(0,0,0,0.1);
+font-size: 28;
+
+}

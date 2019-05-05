@@ -1,0 +1,67 @@
+div p{
+/*父子选择器*/
+color: red;
+
+}
+div p span{
+
+background-color: green;
+
+}
+ 
+ div > span {
+/*直接子元素选择器*/
+ color: yellow;
+
+ }
+
+
+ div.demo{
+/* 并列选择器 */
+background-color: #876;
+
+ }
+  .demo{
+
+background-color: green;
+
+ }
+
+ em,strong,span{
+/* 分组选择器 */
+background-color: #954;
+font-size: 30px;
+font-weight: bold;
+font-style: italic;
+/*斜体 等于 em标签*/
+/*字体包*/
+font-family: arial;
+ border: 1px solid #848;
+
+ }
+
+#bordertest{
+ border: 100px solid #848;
+height: 0px;
+width: 0px;
+/*
+height: 10px;
+width: 10px;
+*/
+border-left-color: transparent;
+border-bottom-color: transparent;
+border-right-color: transparent;
+
+}
+#bordertest1{
+	border: 100px solid #848;
+	height: 0px;
+    width: 0px;
+	/*background-color: red;*/
+border-left-color: red;
+border-bottom-color: green;
+border-right-color: blue;
+/* 切圆角*/
+border-radius: 5px;
+
+}
