@@ -1,0 +1,121 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css问题 权重</title>
+	<meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="../c03css/003.css">
+	<style type="text/css">
+		#ceshi{
+
+ 	font-weight: 10;
+ 	font-size: 12;
+ 	background-color: green;
+ 	height: 60px;
+ 	float: left;
+ 	margin-top: 10px;
+
+
+		}
+
+	.class001{
+	margin-top: 10px;
+	background-color: red;
+	text-align: center;
+
+
+	}
+
+	.classdemo1{
+	color: #037;
+
+	}
+	.classdemo2{
+	color: #048;
+
+	}
+	.classdemo3{
+	color: #059;
+
+	}
+	.classdemo4{
+	color: #060;
+
+	}
+
+	#divtest{
+		background-color: green;
+		color: red;
+		
+		margin-top: 10px;
+		
+		height: 100px;
+
+	}
+
+
+	</style>
+</head>
+<body>
+<div id="divtest"> 用ID引用背景色字体黑色CSS样式引入样式 #+ID{}  </div>
+
+
+<div class="class001">
+	<!-- 外层嵌套测试001 -->
+	<p>001</p>
+		外层嵌套测试001 背景统一 文字颜色不同 用css引用 .+class名称
+
+<div class="classdemo1" >  class1文字背景统一 #037  </div>
+<div class="classdemo2" >  class2文字背景统一 #048  </div>
+<div class="classdemo3" >  class3文字背景统一 #059 </div>
+<div class="classdemo4" >  class4文字背景统一 #060 </div>
+
+
+</div>
+
+ <div style="background-color: yellow ; font-size: 17;text-align: center;color: black; margin-top: 10px;height: auto;" >
+ 	<p>002</p>
+ 	 绑定css文本的设置
+ 	</div>
+ 
+ <div id="span001link" >
+ 	<p id="ceshi"> 这个是在头文件引入css 003 </p>
+ 从另一个文件夹引入css样式 &lt;link rel="stylesheet" type="text/css" href=""&gt; 
+</div>
+
+
+
+ <div class="formclass" >
+ 	<p>004</p>
+ 	
+<form >
+	<p> 
+
+	用户名：	<input  class ="input_value_nomal_color" type="text" name="姓名" value="postname">
+		
+	</p>
+	<p> 
+		
+	&nbsp;&nbsp;密码：&nbsp;&nbsp;<input class ="input_value_nomal_color" type="text" name="密码" value="postpassword">
+		
+	</p>
+   
+
+
+
+
+<input type="submit" value="提交请求">
+</form>
+
+
+ </div>
+
+ <div style="background-color:rgb(119,188,166); width: 100px ; height: 100px;">
+ 	<div style="background-color:rgb(113,113,113) ;width: 50px ; height: 30px;"></div>
+
+ </div>
+
+</body>
+</html>
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>父子/派生选择器</title>
+	<link rel="stylesheet" type="text/css" href="../c03css/lesson04.css">
+</head>
+<body>
+<p>  css 权重<br/>
+ !important 		Infinity<br/>
+ 行间距         			1000<br/>
+ id            			100<br/>
+ class|属性|伪类			10<br/>
+标签选择器|伪元素			1<br/>
+通配符 					0<br/>
+
+</p>
+<p>父子选择器</p>
+<div>
+	<span>
+		直接子元素选择器
+	<p>div内部的P标签变颜色 父子选择器 <span> 换个颜色</span> </p>
+
+	</span>
+</div>
+
+
+<em>1</em>
+<strong>2</strong>
+<span>人能识别光学3元色 r g b </span>
+<div class="demo" > div的demo选择demo</div>
+<p class="demo"> p的demo选择demo </p>
+<p>画三角图标</p>
+<div id="bordertest"></div>
+
+<div id="bordertest1"></div>
+</body>
+</html>
