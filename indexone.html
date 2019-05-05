@@ -1,0 +1,349 @@
+
+
+<?php  session_start();   header("welcom.php")?>
+<html>
+<header>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<!--   src 引用外部的JavaScript  <script type="text/javascript" src="example.js" >
+    console.log("Hello!");  //永远不会执行
+</script>
+  --> 
+
+<title>javascript Test </title>
+
+<style type="text/css">
+
+.output  { font-weight: bold; }/* 粗体 */
+ #payment { text-decoration: underline; }  /* 定义id = "payment"元素样式 */
+#praph{ border:solid black 1px; }/* 边框 */
+th,td{ vertical-align: bottom;}/* 对齐 */
+
+
+</style>
+</header>
+<body>
+
+<form action="welcom.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<?php  $_SESSION['section'] = '秋天'; ?>
+<input type="submit">
+
+
+</form>
+  要确保文件上传的属性是 encype = "multipart/form-data",否则文件无法上传
+  
+<form  enctype = "multipart/form-data" action = "welcom.php" method = "POST">
+	<input type = "hidden" name = "MAX_FILE_SIZE" value = "30000"/>
+	<input name = "userfile" type = "file"/>
+	<input type = "submit" value = "上传文件"/>
+
+</form>
+
+<table border = '2'>
+<tr>
+<th> inputetype name = userfile  php 根据这个名字来获取来上传的文件  </th>
+</tr>
+<tr>
+<td>name 可以随意命名</td>
+<td> php 提供了一个全局变量$_FILE数组来处理这些信息  </td>
+<td> $_FILE['userfile']['name'] 文件的原名称 </td>
+<td>   $_FILE['userfile']['size']文件的大小  </td>
+<td>   $_FILE['userfile']['type_name']文件在服务器存储的临时名称  </td>
+<td>   $_FILE['userfile']['error']文件上传的错误代码  </td>
+</tr>
+
+</table>
+
+
+
+<table>
+
+
+<tr>
+
+<th> Enter Loan Data:</th>
+
+
+<td id = 'test001td'> dsdsdsdsa</td>
+
+<th>001</th>
+<td>111</td>
+
+<th>002</th>
+<td>222</td>
+
+
+<th>003</th>
+<td>333</td>
+
+<th>004</th>
+<td>444</td>
+
+ </tr>
+
+
+
+<tr>
+
+<th> Data:</th>
+
+
+<td id = 'test002td'> dsdsdsdsa</td>
+
+<th>001</th> <td>111</td>
+
+
+<th>002</th><td>222</td>
+
+
+
+<th>003</th> <td>333</td>
+
+
+<th>004</th> <td>444</td>
+
+
+ </tr>
+
+
+</table>
+
+<a href="javascript:void window.open();">打开新页面</a>
+<script >
+var a = 1000;
+console.log(a+'打印台输出');
+function function_nameTest001 (a,b) {
+	// body...
+
+	return a+b;
+}
+
+ console.log(function_nameTest001(1,9)) ;
+54+"单独的数字"
+/*定义数组*/
+var matrix =[[1,2,3],[4,5,6],[7,8,9]];
+
+console.log(matrix[0]);/* 打印第一个数组*/
+console.log(matrix[1][0]);/* 打印第二个数组的第一个属性 */
+var o ={x:1,y:{z:3}};
+var a1 = [0,4,[5,6]];
+console.log(o.x);
+console.log(o["x"]);
+console.log(o.y);
+console.log(o.y.z);
+console.log(a1[2]);
+/* 创建对象 new object();*/
+
+if (matrix[0] > matrix[1]){
+
+console.log("比较运算");
+
+
+
+
+};
+ if ("x" in o) {
+
+console.log("包含这个属性");
+
+ };
+var f = function(x){return x*x}, y=f;
+console.log(f(6),y*y);
+
+/*  
+try{
+var n = Number(prompt("不允许为空",""));
+var f001 = factionial(n);
+alert(n+"| = "+f001);
+
+}
+catch(error){
+
+alert(error);
+
+}
+finally{
+
+
+}
+ */
+
+/* concat    */
+var concat001 = [1,2,3];
+concat001.concat(4,5);
+console.log(concat001);
+concat001.concat([4,5,[6,7]]);
+console.log(concat001);
+
+/*     转字符串属性  */
+
+concat001.toString();
+for (var i =0; i < concat001.length; i++) {
+	
+	console.log(concat001[i].toString() +  concat001[i].toString());
+
+};
+
+/*  字符串解码*/
+var uri = "www.baidu.com/ 你好.html # share"
+
+console.log(encodeURI(uri));
+console.log(encodeURIComponent(uri));
+
+
+// var urlenecode = "https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&rsv_idx=1&tn=baidu&wd=%E7%99%BE%E5%BA%A6&oq=github&rsv_pq=d646fab30000e895&rsv_t=ea3f43JCDn7MsqBc8EWlMEu%2BlnKDdaqu3NMG0WNC%2BLAvppllw9RE9wmjDYw&rqlang=cn&rsv_enter=1&inputT=2887&rsv_sug3=48&rsv_sug1=36&rsv_sug7=101&bs=github";
+
+console.log(decodeURI(uri));
+
+console.log(decodeURIComponent(uri));
+
+
+/*  字符串解码*/
+
+/*
+windows 属性
+*/
+var colors = "read";
+function saycolors(){
+
+console.log(window.colors);
+
+}
+
+window.saycolors();
+/*
+windows 属性
+*/
+
+/*
+产生m个n范围内的不重复随机数（m<=n)
+*/
+
+
+var getRandomNumbers = function(n , m){
+
+  if (typeof n !== 'number' || typeof m !=='number' ) {
+
+    throw error('必须为数字');
+ 
+   };
+
+
+
+ //  if ( typeof n !== 'Number' || typeof m !=='Number' ) {
+
+ //   throw Error('必须位数字');
+
+ //  }
+
+ //  if (m>n) {
+
+ //    throw Error('m必须小于n');
+  
+ //  }
+
+ // var num = Math.floor(Math.random() * n + m)
+
+ //   return num;
+
+}
+
+console.log(getRandomNumbers(20,30));
+/*
+产生m个n范围内的不重复随机数（m<=n)*/
+
+
+/*   object */
+
+var personT = {
+ name : "天添",
+ age : 1
+};
+
+var persont = new Object();
+persont.name = "天添M";
+persont.age = 28 ;
+
+
+console.log("姓名："+ personT.name +"-------"+persont.name + "年龄：" +personT.age+"--------"+persont.age +"\n"+persont+"\n"+personT);
+
+function ShowThisObject(ob){
+
+var demo = "";
+for( var objectname in ob){
+
+
+demo += objectname +";" + ob[objectname]+":";
+
+}
+
+
+
+console.log(demo);
+}
+
+ShowThisObject(personT);
+
+
+/*   序列化 */
+jasonTest ={x:1,y:{z:[false,null,""]}};
+ var showJason = JSON.stringify(jasonTest);
+console.log(showJason);
+var showobjchangejason = JSON.parse(showJason);
+console.log(showobjchangejason);
+
+
+
+ 
+function openNewDom(){
+
+/*  Windows属性 弹出一个新页面 */
+var win = window.open("https://baidu.com","newWindow","height=400,width=400,top=10,left=10,resizable=yes");
+
+}
+
+/*  系统对话框 */
+if (confirm("确定吗")) {
+
+
+alert('yes');
+
+} else{
+
+alert('no');
+
+
+};
+
+
+</script>
+
+
+<button id="openWindos" onclick="openNewDom()" > 打开新窗口</button>
+ 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

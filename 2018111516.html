@@ -1,0 +1,67 @@
+
+
+<?php  session_start();   header("welcom.php")?>
+<html>
+<header>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+</header>
+<body>
+
+<form action="welcom.php" method="post">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<?php  $_SESSION['section'] = '秋天'; ?>
+<input type="submit">
+
+
+</form>
+  要确保文件上传的属性是 encype = "multipart/form-data",否则文件无法上传
+  
+<form  enctype = "multipart/form-data" action = "welcom.php" method = "POST">
+	<input type = "hidden" name = "MAX_FILE_SIZE" value = "30000"/>
+	<input name = "userfile" type = "file"/>
+	<input type = "submit" value = "上传文件"/>
+
+</form>
+
+<table border = '2'>
+<tr>
+<th> inputetype name = userfile  php 根据这个名字来获取来上传的文件  </th>
+</tr>
+<tr>
+<td>name 可以随意命名</td>
+<td> php 提供了一个全局变量$_FILE数组来处理这些信息  </td>
+<td> $_FILE['userfile']['name'] 文件的原名称 </td>
+<td>   $_FILE['userfile']['size']文件的大小  </td>
+<td>   $_FILE['userfile']['type_name']文件在服务器存储的临时名称  </td>
+<td>   $_FILE['userfile']['error']文件上传的错误代码  </td>
+</tr>
+
+</table>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
