@@ -1,0 +1,34 @@
+
+
+
+#oneline{
+height: 30px;
+border: 1px dashed black;
+text-align: center;
+font-size-adjust: 15px;
+line-height:30px; 
+/*当行文本高度局中就是使文本高度等于容器高度 */
+
+}
+
+#moreline{
+margin-top: 10px;
+border: 1px dashed black;
+text-align: left;
+/*font-size-adjust: 15px;*/
+font-size: 15px;
+line-height:25px; 
+/*首行缩进  em 是单位*/
+text-indent: 2em;
+}
+
+.spantest001:hover{
+	display: inline;
+	/* 这样的话宽高就没有效果了*/
+color: rgba(0,0,238);
+text-decoration: line-through;
+text-decoration-color: #f40;
+cursor: crosshair;
+
+background-color: red;
+}
