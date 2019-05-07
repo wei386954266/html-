@@ -1,0 +1,147 @@
+*{
+
+margin: 0px;
+padding: 0px;
+
+}
+#firstdemo{
+
+height: 30px;
+text-align: center;
+}
+
+.heigt{
+
+width: 100px;
+height: 100px;
+}
+.changeheight{
+
+width: 40px;
+height: 40px;
+
+
+}
+.red{
+
+background-color: red;
+
+}
+.red1{
+
+background-color: green;
+
+}
+.red2{
+
+background-color: blue;
+
+}
+.red3{
+
+background-color: yellow;
+
+}
+.red4{
+
+background-color: #f40;
+
+}
+.red5{
+
+background-color: #CC2;
+
+}
+
+
+.box{
+position: relative;
+margin-top: 10px;
+margin-left: 10px;
+
+
+}
+
+
+.box1{
+position: absolute;
+top: 30px;
+left: 30px;
+
+
+}
+
+
+.box2{
+
+
+float: right;
+}
+
+
+.box3{
+
+float: left;
+
+}
+
+h1{
+text-align: center;
+clear: both;
+margin-top: 10px;
+}
+.box9{
+clear: both;
+position: relative;
+background-color: black;
+
+width: 340px;
+height:340px;
+margin-top: 10px;
+margin-left: 10px;
+
+}
+.box4{
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+span::after{
+
+content: "后面用伪元素拼接的东西";
+
+
+}
+span::before{
+
+content: "前面用伪元素拼接的东西";
+
+
+}
+.nav{
+
+list-style: none;
+
+}
+.nav .list-item a:hover{
+/* class选择器 以后+ 空格 另一个类选择器  标签的属性直接就是：+属性中间没有空格 */
+	background-color: #f40;
+	color: white;
+}
+.nav .list-item a{
+/*/border: 1px solid black;*/
+text-decoration:none; 
+padding:5px 10px;
+/*background-color: red;*/
+border-radius: 20px;
+color: red;
+
+}
+.nav .list-item{
+float: left;
+padding: 10px;
+height: 30px;
+
+}
+
