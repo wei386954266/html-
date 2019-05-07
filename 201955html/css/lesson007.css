@@ -1,0 +1,142 @@
+*{
+
+margin: 0px;
+padding: 0px;
+
+}
+h1{
+/* 要有高度 可以让后面的绝对定位右参考值不然造成定位不准确*/
+text-align: center;
+height: 35px;
+}
+.red{
+
+background-color: red;
+
+}
+.green{
+
+background-color: green;
+
+}
+.purpor{
+
+background-color: #DD3;
+
+}
+.purpor{
+
+background-color: yellow;
+
+}
+.right{
+position: absolute;
+width: 100px;
+height: 100px;
+right: 0px;
+top: 35px;
+
+
+}
+.left{
+
+
+margin-right: 100px;
+height: 100px;
+
+}
+
+.bag{
+
+position: relative;
+
+margin-top: 10px;
+margin-right: 10px;
+margin-left: 10px;
+ height: 300px;
+
+}
+.box,.box1,.box2,.box3{
+width: 25%;
+height:260px; 
+
+
+}
+.box{
+position: absolute;
+top: 20px;
+left: 0px;
+
+}
+.box1{
+position: absolute;	
+top: 20px;
+left: 25%;
+
+}
+
+
+.box2{
+	position: absolute;	
+
+	top: 20px;
+
+  left: 50%;
+}
+.box3{
+	position: absolute;	
+
+top: 20px;
+
+left: 75%;
+
+}
+
+
+.bag2{
+
+position: relative;
+margin-top: 10px;
+margin-left: 10px;
+margin-right: 10px;
+height: 300px;
+
+}
+.box7,.box10,.box8,.box9{
+
+width: 25%;
+height: 280px;
+
+}
+
+.box7{
+
+
+position: absolute;
+top: 10px;
+
+}
+
+
+.box8{
+
+position: absolute;
+top: 10px;
+left: 25%;	
+}
+
+.box9{
+
+position: absolute;
+top: 10px;
+left: 50%;
+
+}
+
+.box10{
+position: absolute;
+top: 10px;
+left: 75%;
+
+
+}
