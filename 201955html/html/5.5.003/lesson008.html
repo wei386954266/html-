@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../c03css/lesson008.css">
+	<title>第八课 bfc block format context</title>
+</head>
+<body>
+<div id="firstdemo">如何触发盒子的bfc  有四种方法 position:absolute;  float:left/right; diaplay:inline-block;overflow:hidden;</div>
+<div class="box red heigt">
+	position : absolute
+<div class="box1 red5  changeheight">
+	
+</div>
+
+</div>
+<span class="box2 red3 heigt">
+	1
+<span class="box3 red4 changeheight">
+	2
+</span>
+
+</span>
+<h1 > clear ：both 清除浮动流 显示到应该显示的位置</h1>
+<div class="box9">
+	
+<div class="box4 red3 heigt">1</div>
+<div class="box4 red3 heigt">2</div>
+<div class="box4 red3 heigt">3</div>
+<div class="box4 red3 heigt">4</div>
+<div class="box4 red3 heigt">5</div>
+<div class="box4 red3 heigt">6</div>
+<div class="box4 red3 heigt">7</div>
+<div class="box4 red3 heigt">8</div>
+<div class="box4 red3 heigt">9</div>
+
+</div>
+
+<h1>伪元素可以用css选中 伪元素是行级元素想要改为块级元素display:inline-block 就可以了 </h1>
+<span > ----我只写了这么多东西---- </span>
+
+<ul class="nav">
+	<li class="list-item"><a href="#">天猫</a>
+	</li>
+	<li class="list-item"><a href="#">聚划算</a></li>
+	<li class="list-item"><a href="#">天猫超市</a></li>
+</ul>
+
+
+
+</body>
+</html>
